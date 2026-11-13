@@ -1,0 +1,370 @@
+
+/* Basic styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fffaf2;
+    color: #3d3028;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #49352a;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f4b183;
+}
+
+/* Common section styling */
+
+section {
+    padding: 45px 8%;
+}
+
+h2 {
+    font-size: 28px;
+    color: #49352a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #a65328;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* Home section */
+
+#home {
+    background-color: #f5e5d3;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#home h2 {
+    font-size: 38px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+#home a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #a65328;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home a:hover {
+    background-color: #49352a;
+}
+
+/* Food categories */
+
+#categories {
+    text-align: center;
+    background-color: #fffaf2;
+}
+
+#categories nav {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#categories nav a {
+    background-color: #f0d5bd;
+    color: #49352a;
+    padding: 10px 18px;
+    border-radius: 20px;
+}
+
+#categories nav a:hover {
+    background-color: #a65328;
+    color: white;
+}
+
+/* Menu section */
+
+#menu {
+    background-color: #f9f1e8;
+}
+
+#menu > h2 {
+    margin-bottom: 35px;
+}
+
+#menu > section {
+    padding: 25px 0;
+}
+
+#menu > section h3 {
+    border-bottom: 2px solid #e5c5a8;
+    padding-bottom: 8px;
+}
+
+/* Food cards */
+
+article {
+    background-color: white;
+    padding: 18px;
+    margin: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+#menu article {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    min-height: 370px;
+}
+
+article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+article h4 {
+    color: #49352a;
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+article p {
+    font-size: 15px;
+}
+
+article:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Special section */
+
+#special {
+    background-color: #fffaf2;
+}
+
+#special article {
+    display: inline-block;
+    vertical-align: top;
+    width: 42%;
+    min-height: 350px;
+}
+
+/* Offers section */
+
+#offers {
+    background-color: #f5e5d3;
+    text-align: center;
+}
+
+#offers article {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    min-height: 180px;
+    border-top: 4px solid #a65328;
+}
+
+#offers article h3 {
+    color: #49352a;
+}
+
+/* About section */
+
+#about {
+    text-align: center;
+    background-color: #fffaf2;
+}
+
+#about img {
+    width: 70%;
+    max-width: 500px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0 20px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+/* Contact section */
+
+#contact {
+    background-color: #f9f1e8;
+    text-align: center;
+}
+
+#contact a {
+    color: #a65328;
+    margin: 5px 10px;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 500px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #d5bda8;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #a65328;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #49352a;
+}
+
+/* Footer */
+
+footer {
+    background-color: #49352a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    #menu article {
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #special article {
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #offers article {
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #about img {
+        width: 100%;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #home h2 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
